@@ -1,0 +1,33 @@
+.App {
+  text-align: center;
+}
+
+.buttonBox {
+  margin: 0 auto;
+  display: flex;
+  width: 20%;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+#myCanvas {
+  margin-top: 20px;
+  border: 1px solid black;
+}
+
+.inactiveButton {
+  display: none;
+}
+
+.placingStamp {
+  font-size: 10px;
+  color: grey;
+}
+
+.grid {
+  border: 2px solid grey;
+}
+
+.optionBox {
+  margin-bottom: 50px;
+}

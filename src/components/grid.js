@@ -7,9 +7,9 @@ import {GameStateContext} from '../context/GameStateContext'
 
 const Grid = () => {
 
-    const {cellStamp, setCellStamp} = useContext(CellStampContext)
-    const {gameColor, setGameColor} = useContext(GameColorContext)
-    const {gameRunning, setGameRunning} = useContext(GameRunningContext)
+    const {cellStamp} = useContext(CellStampContext)
+    const {gameColor} = useContext(GameColorContext)
+    const {gameRunning} = useContext(GameRunningContext)
     const {gameState, setGameState} = useContext(GameStateContext)
 
     const gridSize = gameState.gridSize;

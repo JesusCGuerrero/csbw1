@@ -77,7 +77,7 @@ const Options = () => {
         const newArr = curArr.map((cell, index) => {
             let neighbors = 0
             if (index >= size) {
-                if (index % size != 0) {
+                if (index % size !== 0) {
                     if (curArr[index - size - 1]) {
                         neighbors += 1
                     }
@@ -85,24 +85,24 @@ const Options = () => {
                 if (curArr[index - size]) {
                     neighbors += 1
                 }
-                if (index % size != size - 1) {
+                if (index % size !== size - 1) {
                     if (curArr[index - size + 1]) {
                         neighbors += 1
                     }
                 }
             }
-            if (index % size != 0) {
+            if (index % size !== 0) {
                 if (curArr[index - 1]) {
                     neighbors += 1
                 }
             }
-            if (index % size != size - 1) {
+            if (index % size !== size - 1) {
                 if (curArr[index + 1]) {
                     neighbors += 1
                 }
             }
             if (index < size * (size - 1)) {
-                if (index % size != 0) {
+                if (index % size !== 0) {
                     if (curArr[index + size - 1]){
                         neighbors += 1
                     }
@@ -110,7 +110,7 @@ const Options = () => {
                 if(curArr[index + size]) {
                     neighbors += 1
                 }
-                if (index % size != size - 1) {
+                if (index % size !== size - 1) {
                     if (curArr[index + size + 1]) {
                         neighbors += 1
                     }
@@ -118,8 +118,8 @@ const Options = () => {
             }
             if (neighbors > 3) {
                 return false;
-            } else if (curArr[index] == false) {
-                if (neighbors == 3) {
+            } else if (curArr[index] === false) {
+                if (neighbors === 3) {
                     return true;
                 } else {
                     return false;
